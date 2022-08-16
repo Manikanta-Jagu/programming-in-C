@@ -1,0 +1,54 @@
+#include <stdio.h>
+	int main() {
+	int p[4],count=0;
+
+	int i;
+	for(i=0;i<4;i++)
+	{
+	    scanf("%d",&p[i]);
+	}
+	for(i=0;i<4;i++)
+	{
+	    if(p[i]>=10)
+	    {
+	        count++;
+	        
+	    }
+	}
+	printf("%d",count);
+
+
+
+	return 0;
+}
+
+SECOND METhOOD:
+
+// program to check the count of numbers greater than the given number using array.
+#include<stdio.h>
+	int main() {
+	
+	int n;
+	scanf("%d",&n);
+	int p[n],count=0;
+
+	int i;
+	for(i=0;i<n;i++)
+	{
+	    scanf("%d",&p[i]);
+	}
+	for(i=0;i<n;i++)
+	{
+	    if(p[i]>=10)
+	    {
+	        count++;
+	        
+	    }
+	}
+	printf("%d",count);
+
+
+
+	return 0;
+}
+
