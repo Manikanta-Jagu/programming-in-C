@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char s[10];
+    int capcount=0,lowcount=0,splcount=0,i;
+    printf("enter a string:");
+    gets(s);
+
+    for(i=0;s[i]!='\0';i++)
+    {
+        if(isupper (s[i]))
+        {
+            capcount++;
+        }
+        else if(islower (s[i]))
+        {
+            lowcount++;
+        }
+        else
+        {
+            splcount++;
+        }
+    }
+printf("\ncount of upper characters:%d",capcount);
+printf("\ncount of lower characters:%d",lowcount);
+printf("\ncount of special characters:%d",splcount);
+}
